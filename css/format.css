@@ -121,6 +121,26 @@ header{text-align:left}
   align-content: center;
 }
 
+#cursor {
+  background: lime;
+  line-height: 17px;
+  margin-left: 3px;
+  -webkit-animation: blink 0.8s infinite;
+  width: 2px;
+  display: inline-block;
+  height: 30px;
+}
+
+#cursorPqn {
+  background: lime;
+  line-height: 17px;
+  margin-left: 3px;
+  -webkit-animation: blink 0.8s infinite;
+  width: 2px;
+  display: inline-block;
+  height: 12px;
+}
+
 @keyframes blink { /* animação do piscar do cursor */
   0% {background: transparent}
   50% {background: #fff}

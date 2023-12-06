@@ -1,0 +1,149 @@
+header{text-align:left}
+
+@font-face {
+  font-family: "Source Code Pro"; /* importa a fonte costumizada usada no site todo */
+  src: url("../fonts/SourceCodePro.ttf");
+  }
+
+.menuInicial {
+  text-align:center;
+  background-color: black;
+  color:white;
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpPage {
+  text-align:center;
+  background-color: black;
+  color:white;
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+  animation: fadeIn 0.5s forwards;
+  display: flex;
+  min-height: 100vh;
+}
+
+.whoami {
+  margin: 10px 0 0 1px;
+  background-color: black;
+  color:white;
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+  animation: fadeIn 0.5s forwards;
+}
+
+.curriculum {
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+  color:black;
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+  animation: fadeIn 0.5s forwards;
+}
+
+.senacPages{
+  margin: 10px 10px 0 10px;
+  background-color: black;
+  color:white;
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+  animation: fadeIn 0.5s forwards;
+}
+
+.senacPagesClicked{
+  margin: 10px 10px 0 10px;
+  background-color: black;
+  color:white; /* dividido em dois para não haver transição na parte do texto que deve permanecer estática */
+  font-family: "Source Code Pro", "Source Code Pro", monospace;
+}
+
+.menuText{
+  position: absolute;
+  margin: 50vh 50vw; /*centraliza o texto da página de título */
+  transform: translate(-50%, -50%);
+}
+
+.helpText{
+  margin: auto; /* centraliza o texto da página de ajuda */
+}
+
+.menuButtons{
+  opacity: 0;
+  position: absolute;
+  width: 1000px;
+  margin: 60vh 50vw;
+  transform: translate(-50%, -40%);
+  animation: fadeIn 1.2s forwards; /* anima e centraliza os botões do título */
+  animation-delay: 1s;
+}
+
+.buttonFade{
+  opacity: 0; /* faz os botões do menu sumirem quando clicados */
+}
+
+.lineSep {
+  border-top: 1px solid white;
+}
+
+.lineSepBlk {
+  border-top: 1px solid black;
+}
+
+.typewriter h1 {
+  overflow: hidden; /*esse código, assim como o de baixo, define o texto da animação do scroll do texto quando necessário. */
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 0.8s steps(40, end),
+    blink-caret 0.8s step-end infinite;
+}
+
+.typewriter2 h1 {
+  overflow: hidden; /*o motivo por existir dois desses é pra classe ser substituida corretamente na */
+  border-right: .15em solid white; /*animação de fade do menu principal */
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 0.8s steps(40, end),
+    fadeOut 2s forwards;
+}
+
+.textFade{
+  animation: fadeIn 0.5s forwards;
+}
+
+.imgFade{
+  animation: fadeIn 0.5s forwards;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+@keyframes blink { /* animação do piscar do cursor */
+  0% {background: transparent}
+  50% {background: #fff}
+  100% {background: transparent}
+}
+
+@keyframes fadeIn { /* animação de fade in */
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes fadeOut { /* animação de fade out, timada com o typewriter */
+  0% {opacity: 1}
+  50% {opacity: 1;}
+  100% {opacity: 0}
+}
+
+@keyframes typing { /* animação de typewriter */
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret { /* outra animação do piscar do cursor */
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}

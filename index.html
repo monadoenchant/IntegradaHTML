@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Menu Inicial </title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/format.css">
+        <script defer src="./js/bootstrap.bundle.js"></script>
+        <script defer src="./js/scripts.js"></script>
+    </head>
+
+<!-- a página inicial é bem básica, ela tem os botões do bootstrap (assim como o projeto todo), e tem uma animação massa
+    pra transicionar o usuário de uma página pra outra, que é feita com uma mistura de JS e CSS -->
+
+<body class="menuInicial">
+    
+    <div class="menuText"><div class="typewriter" id="stringMenu"><h1>[rafael@website ~]$</h1></div><div class="typewriter2" id="optionString"></div></div>
+    <div class="menuButtons" id="allBtns">
+        <button type="button" onclick='buttonPressed(0)' id="manBtn" class="btn btn-dark" >tree /home/rafael/senac</button>
+        <button type="button" onclick='buttonPressed(1)' id="catBtn" class="btn btn-dark" >tree /home/rafael/tech</button>
+        <button type="button" onclick='buttonPressed(2)' id="whoamiBtn" class="btn btn-dark" >whoami</button>
+        <button type="button" onclick='buttonPressed(3)' id="helpBtn" class="btn btn-dark" >help</button>
+    </div>
+
+</body>
+
+</html>
